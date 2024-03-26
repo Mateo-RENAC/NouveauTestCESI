@@ -1,4 +1,6 @@
 ﻿using static Animal;
+using static Vehicule;
+using static IPilotage;
 
 
 class Griffin : Animal
@@ -8,7 +10,7 @@ class Griffin : Animal
     {
     }
 
-    public Griffin(String Name)
+    public Griffin(string Name)
     {
         this.Name = Name;
     }
@@ -20,18 +22,18 @@ class Griffin : Animal
 
 }
 
-class Dragon : Animal
+class Dragon : Animal, IPilotage
 {
     public Dragon()
     {
     }
 
-    public Dragon(String Name)
+    public Dragon(string Name)
     {
         this.Name = Name;
     }
 
-    public String DragonBreath()
+    public string DragonBreath()
     {
         return "Dragon use Flame";
     }
@@ -39,6 +41,11 @@ class Dragon : Animal
     public override void WhatAreYou()
     {
         Console.WriteLine("I'm a FUCKIN DRAGON " + DragonBreath() );
+    }
+
+    public void Embarquer()
+    {
+        Console.WriteLine("Embarquement sur " + Name);
     }
 
 }

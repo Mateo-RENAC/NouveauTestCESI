@@ -40,6 +40,7 @@ class Program
             Dragon choosing = new Dragon("Dragon");
             choosing.WhatAreYou();
             choosing.Moove();
+            choosing.Embarquer();
             choosing.Sleep();
             Console.WriteLine("END_FUNCTION");
         }
