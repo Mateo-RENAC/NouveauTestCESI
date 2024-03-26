@@ -11,6 +11,7 @@ class Program
         if (user.Equals("wolf")) 
         {
             Wolf choosing = new Wolf("wolf");
+            Wolf.WhatAreYou();
             choosing.Sound();
             choosing.Moove();
             choosing.Sleep();
@@ -19,6 +20,7 @@ class Program
         else if (user.Equals("sheep"))
         {
             Sheep choosing = new Sheep("sheep");
+            Sheep.WhatAreYou();
             choosing.Sound();
             choosing.Moove();
             choosing.Sleep();
@@ -26,7 +28,7 @@ class Program
         }
         else
         {
-            Animal animal = new Animal();
+            /* Animal animal = new Animal();*/
             Console.WriteLine("No_sound");
             animal.Moove();
             animal.Sleep();

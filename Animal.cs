@@ -1,4 +1,6 @@
-﻿abstract class Animal
+﻿using System.Security.Cryptography.X509Certificates;
+
+abstract class Animal
 {
     public string? Name;
 
@@ -30,6 +32,11 @@
         }
     }
 
+    public virtual void WhatAreYou()
+    {
+        Console.WriteLine("I'm NoneExist Animal!");
+    }
+
     public static bool Exist(String Name)
     {
         if (Name == null)
@@ -51,13 +58,18 @@
 
 }
 
-class Wolf:Animal
+class Wolf : Animal
 {
     public String Sound()
     {
         Console.WriteLine("Aooouh!\n");
         return "Aooouh!\n";
 
+    }
+
+    public override void WhatAreYou()
+    {
+        Console.WriteLine("I'm a Wolf !");
     }
 
     public Wolf(String Name)
@@ -67,7 +79,7 @@ class Wolf:Animal
 
 }
 
-class Sheep:Animal
+class Sheep : Animal
 {
     public String Sound()
     {
@@ -78,6 +90,11 @@ class Sheep:Animal
     public Sheep(String Name)
     {
         this.Name = Name;
+    }
+
+    public override void WhatAreYou()
+    {
+        Console.WriteLine("I'm a Sheep !");
     }
 
 }
