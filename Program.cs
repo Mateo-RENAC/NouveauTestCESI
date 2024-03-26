@@ -46,12 +46,12 @@ class Program
         }
         else
         {
-            /* Animal animal = new Animal();*/
-            //Console.WriteLine("No_sound");
-            //animal.Moove();
-            //animal.Sleep();
-            //Console.WriteLine("END_FUNCTION");
-            Console.WriteLine("NoneAnimalExist");
+            /* Animal animal = new Animal();
+            Console.WriteLine("No_sound");
+            animal.Moove();
+            animal.Sleep();
+            Console.WriteLine("END_FUNCTION");*/
+            Console.WriteLine("NoneAnimalDoNotExist");
         }
     }
 
