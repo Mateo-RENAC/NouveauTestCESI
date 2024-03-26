@@ -1,0 +1,5 @@
+﻿
+interface IPilotage
+{
+    void Embarquer();
+}
