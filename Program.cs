@@ -19,6 +19,7 @@ class Program
 
         else if (user.Equals("2")) {
             Console.WriteLine("Choose Animal : Wolf, Sheep, Griffin, Dragon");
+            user = Console.ReadLine();
 
             if (user.Equals("Wolf"))
             {
@@ -54,6 +55,14 @@ class Program
                 choosing.Embarquer();
                 choosing.Sleep();
                 Console.WriteLine("END_FUNCTION");
+            }
+            else if (user.Equals("Aigle"))
+            {
+                Aigle choosing = new Aigle("Aigle", 20);
+                choosing.WhatAreYou();
+                choosing.Moove();
+                choosing.Voler();
+                choosing.Sleep();
             }
             else
             {

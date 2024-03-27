@@ -1,4 +1,4 @@
-﻿class Aigle : Animal
+﻿class Aigle : Animal, IFly
 {
     public string? Name { get; set; }
     public int rarity { get; set; }
@@ -9,4 +9,8 @@
         this.rarity = 3;
     }
 
+    public void Voler()
+    {
+        Console.WriteLine("AMEERRRIICCAAA FUCK YEAH");
+    }
 }
