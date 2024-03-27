@@ -1,4 +1,4 @@
-﻿class Aigle : Animal, IFly
+﻿class Aigle : Bird, IFly
 {
     public string? Name { get; set; }
     public int rarity { get; set; }
