@@ -3,6 +3,7 @@
 abstract class Animal
 {
     public string? Name;
+    public int rarity { get; set; }
 
     public void Moove()
     {
@@ -46,9 +47,10 @@ abstract class Animal
         else { return true; }
     }
 
-    public Animal(String Name)
+    public Animal(String Name, int rarity=1)
     {
         this.Name = Name;
+        this.rarity = rarity;
     }
 
     public Animal()
